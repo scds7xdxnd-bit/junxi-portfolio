@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/ammarhakimi/Downloads/**)",
+      "Bash(git init:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}
