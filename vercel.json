@@ -1,5 +1,4 @@
 {
-  "github": { "enabled": false },
   "headers": [
     {
       "source": "/images/(.*)",
