@@ -151,7 +151,7 @@ const CERTIFICATES = [
     category: "scholarship",
     date: "2024-1",
     issuer: "Samsung",
-    image_path: "assets/certs/20241_삼성글로벌꿈장학.jpg"
+    image_path: "assets/certs/20241_samsung_scholarship.jpg"
   },
   {
     id: "sch-002",
@@ -159,7 +159,7 @@ const CERTIFICATES = [
     category: "scholarship",
     date: "2023-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20232_리앤원_장학.jpg"
+    image_path: "assets/certs/20232_lee-won_scholarship.jpg"
   },
   {
     id: "sch-003",
@@ -167,7 +167,7 @@ const CERTIFICATES = [
     category: "scholarship",
     date: "2024-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20242_서강동문장학.jpg"
+    image_path: "assets/certs/20242_sogang_alumni_scholarship_2.jpg"
   },
   {
     id: "sch-004",
@@ -175,7 +175,7 @@ const CERTIFICATES = [
     category: "scholarship",
     date: "2025-1",
     issuer: "Sogang University",
-    image_path: "assets/certs/20251_서강동문장학.jpg"
+    image_path: "assets/certs/20251_sogang_alumni_scholarship_1.jpg"
   },
   {
     id: "sch-005",
@@ -183,7 +183,7 @@ const CERTIFICATES = [
     category: "scholarship",
     date: "2025-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20252_서강동문장학.jpg"
+    image_path: "assets/certs/20252_sogang_alumni_scholarship_3.jpg"
   },
 
   // ===== ACADEMIC =====
@@ -193,7 +193,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2024-1",
     issuer: "Sogang University",
-    image_path: "assets/certs/20241_PALS_우수상_영어.jpg"
+    image_path: "assets/certs/20241_PALS_excellence_eng.jpg"
   },
   {
     id: "acd-002",
@@ -201,7 +201,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2024-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20242_PALS_우수상.jpg"
+    image_path: "assets/certs/20242_PALS_excellence.jpg"
   },
   {
     id: "acd-003",
@@ -209,7 +209,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2024-1",
     issuer: "Sogang University",
-    image_path: "assets/certs/20241_PALS_활동_영어.jpg"
+    image_path: "assets/certs/20241_PALS_activity_eng.jpg"
   },
   {
     id: "acd-004",
@@ -217,7 +217,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2024-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20242_그룹스터디.jpg"
+    image_path: "assets/certs/20242_group_study.jpg"
   },
   {
     id: "acd-005",
@@ -225,7 +225,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2025-1",
     issuer: "Sogang University",
-    image_path: "assets/certs/20251_디딤돌_멘토링.jpg"
+    image_path: "assets/certs/20251_stepping_stone_mentoring.jpg"
   },
   {
     id: "acd-006",
@@ -233,7 +233,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2022-1",
     issuer: "INTEC Education College",
-    image_path: "assets/certs/20221_INTEC_우수상.jpg"
+    image_path: "assets/certs/20221_INTEC_excellence.jpg"
   },
   {
     id: "acd-007",
@@ -241,7 +241,7 @@ const CERTIFICATES = [
     category: "academic",
     date: "2022-1",
     issuer: "INTEC Education College",
-    image_path: "assets/certs/20221_INTEC_졸업.jpg"
+    image_path: "assets/certs/20221_INTEC_graduation.jpg"
   },
 
   // ===== LEADERSHIP =====
@@ -251,7 +251,7 @@ const CERTIFICATES = [
     category: "leadership",
     date: "2025-1",
     issuer: "Sogang University",
-    image_path: "assets/certs/20251_PALS_회장.jpg"
+    image_path: "assets/certs/20251_PALS_president.jpg"
   },
   {
     id: "ldr-002",
@@ -323,7 +323,7 @@ const CERTIFICATES = [
     category: "leadership",
     date: "2025-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20252_PALS_회장_ENG.jpg"
+    image_path: "assets/certs/20252_PALS_president_ENG.jpg"
   },
   // ===== CULTURAL =====
   {
@@ -332,7 +332,7 @@ const CERTIFICATES = [
     category: "cultural",
     date: "2023-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20232_리앤원_아시안_펠로우십_수료.jpg"
+    image_path: "assets/certs/20232_lee-won_fellowship_completion.jpg"
   },
   {
     id: "cul-002",
@@ -340,7 +340,7 @@ const CERTIFICATES = [
     category: "cultural",
     date: "2023-2",
     issuer: "Sogang University",
-    image_path: "assets/certs/20232_리앤원_아시안_펠로우십_우수상.jpg"
+    image_path: "assets/certs/20232_lee-won_fellowship_excellence.jpg"
   },
   {
     id: "cul-003",
@@ -390,7 +390,7 @@ const CERTIFICATES = [
     category: "language",
     date: "2024-1",
     issuer: "National Institute for International Education",
-    image_path: "assets/certs/20241_TOPIK_성적표.jpg"
+    image_path: "assets/certs/20241_TOPIK_scorecard.jpg"
   },
   {
     id: "lng-002",
@@ -398,7 +398,7 @@ const CERTIFICATES = [
     category: "language",
     date: "2026-1",
     issuer: "Beijing Language and Culture University",
-    image_path: "assets/certs/20261_北京语言大学成绩单.jpg"
+    image_path: "assets/certs/20261_BLCU_transcript.jpg"
   }
 ];
 
@@ -551,7 +551,7 @@ function initLightbox() {
   const backdrop = lightbox.querySelector('.lightbox__backdrop');
 
   function openLightbox(imagePath, altText) {
-    img.src = imagePath;
+    img.src = encodeURI(imagePath);
     img.alt = altText;
     lightbox.hidden = false;
     document.body.style.overflow = 'hidden';
