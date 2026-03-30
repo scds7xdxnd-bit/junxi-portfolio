@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Junxi — Boxer &amp; Creative</title>
-  <meta name="description" content="Portfolio of Junxi — boxing, muay thai training, and avant-garde personal style. Photography and visual storytelling.">
+  <title>Junxi — Fighter &amp; Stylist</title>
+  <meta name="description" content="Junxi. Boxer and Muay Thai practitioner from Guangzhou. Trained without compromise. Dressed with precision.">
   <meta name="theme-color" content="#0a0a0a">
   <link rel="canonical" href="https://junxi-portfolio.vercel.app/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Junxi — Boxer &amp; Creative">
-  <meta property="og:description" content="Boxing, muay thai, and avant-garde style. A visual portfolio.">
+  <meta property="og:title" content="Junxi — Fighter &amp; Stylist">
+  <meta property="og:description" content="Fighter by discipline. Stylist by standard. A visual portfolio.">
   <meta property="og:image" content="https://junxi-portfolio.vercel.app/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -21,8 +21,8 @@
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Junxi — Boxer &amp; Creative">
-  <meta name="twitter:description" content="Boxing, muay thai, and avant-garde style. A visual portfolio.">
+  <meta name="twitter:title" content="Junxi — Fighter &amp; Stylist">
+  <meta name="twitter:description" content="Fighter by discipline. Stylist by standard. A visual portfolio.">
   <meta name="twitter:image" content="https://junxi-portfolio.vercel.app/images/og-image.jpg">
 
   <!-- JSON-LD -->
@@ -33,7 +33,7 @@
     "name": "Junxi",
     "url": "https://junxi-portfolio.vercel.app",
     "image": "https://junxi-portfolio.vercel.app/images/og-image.jpg",
-    "description": "Boxer, muay thai practitioner, and fashion creative.",
+    "description": "Boxer, Muay Thai practitioner, and deliberate dresser. Based in Guangzhou.",
     "knowsAbout": ["Boxing", "Muay Thai", "Fashion", "Personal Style"]
   }
   </script>
@@ -56,16 +56,19 @@
       <div class="nav__inner">
         <a href="#hero" class="nav__logo">JUNXI</a>
         <div class="nav__links" role="list">
-          <a href="#about" class="nav__link" role="listitem">ABOUT</a>
-          <a href="#training" class="nav__link" role="listitem">TRAINING</a>
-          <a href="#style" class="nav__link" role="listitem">STYLE</a>
-          <a href="#contact" class="nav__link" role="listitem">CONTACT</a>
+          <a href="#about" class="nav__link" role="listitem" data-i18n="nav.about">ABOUT</a>
+          <a href="#training" class="nav__link" role="listitem" data-i18n="nav.training">TRAINING</a>
+          <a href="#style" class="nav__link" role="listitem" data-i18n="nav.style">STYLE</a>
+          <a href="#contact" class="nav__link" role="listitem" data-i18n="nav.contact">CONTACT</a>
         </div>
-        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="nav__hamburger-line"></span>
-          <span class="nav__hamburger-line"></span>
-          <span class="nav__hamburger-line"></span>
-        </button>
+        <div class="nav__actions">
+          <button class="nav__lang" data-lang-toggle aria-label="Switch language">中文</button>
+          <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="nav__hamburger-line"></span>
+            <span class="nav__hamburger-line"></span>
+            <span class="nav__hamburger-line"></span>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
@@ -73,10 +76,10 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
     <nav class="mobile-menu__nav" aria-label="Mobile navigation">
-      <a href="#about" class="mobile-menu__link">ABOUT</a>
-      <a href="#training" class="mobile-menu__link">TRAINING</a>
-      <a href="#style" class="mobile-menu__link">STYLE</a>
-      <a href="#contact" class="mobile-menu__link">CONTACT</a>
+      <a href="#about" class="mobile-menu__link" data-i18n="nav.about">ABOUT</a>
+      <a href="#training" class="mobile-menu__link" data-i18n="nav.training">TRAINING</a>
+      <a href="#style" class="mobile-menu__link" data-i18n="nav.style">STYLE</a>
+      <a href="#contact" class="mobile-menu__link" data-i18n="nav.contact">CONTACT</a>
     </nav>
   </div>
 
@@ -100,7 +103,7 @@
         <h1 class="hero__name">JUNXI</h1>
       </div>
       <div class="hero__scroll" aria-hidden="true">
-        <span class="hero__scroll-text">SCROLL</span>
+        <span class="hero__scroll-text" data-i18n="hero.scroll">SCROLL</span>
         <svg class="hero__chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <polyline points="6 9 12 15 18 9"></polyline>
         </svg>
@@ -110,11 +113,11 @@
     <!-- About -->
     <section id="about" class="about" aria-label="About">
       <div class="about__text">
-        <p class="about__label reveal">ABOUT</p>
-        <h2 class="about__heading reveal" style="transition-delay:100ms"><em>I train. I dress how I want. I'm building something.</em></h2>
-        <p class="about__body reveal" style="transition-delay:200ms">Five days a week in the gym. Guard up before the bell, not during. The discipline isn't punishment — it's the only thing that feels like honesty.</p>
-        <p class="about__body reveal" style="transition-delay:300ms">The clothes came later, or maybe they were always there. Black everything. Layered. Intentional. Not fashion as a statement, just fashion as an extension of how I move through the world.</p>
-        <p class="about__body reveal" style="transition-delay:400ms">Guangzhou. Twenty-something. Figuring it out through what I wear and how I fight.</p>
+        <p class="about__label reveal" data-i18n="about.label">ABOUT</p>
+        <h2 class="about__heading reveal" style="transition-delay:100ms" data-i18n-html="about.heading"><em>I train without excuse. I dress with precision. Neither is up for debate.</em></h2>
+        <p class="about__body reveal" style="transition-delay:200ms" data-i18n="about.body1">Five days a week, no exceptions. Guard up before the bell — never during, never after. Discipline isn't punishment. It's the only honest standard there is.</p>
+        <p class="about__body reveal" style="transition-delay:300ms" data-i18n="about.body2">All black. Layered. Every piece chosen — nothing worn without reason. Not fashion as expression, but as an extension of how I carry myself through the world.</p>
+        <p class="about__body reveal" style="transition-delay:400ms" data-i18n="about.body3">Guangzhou. Built in the ring, shaped by the mirror. Not searching for a direction — setting one.</p>
       </div>
       <div class="about__images">
         <figure class="about__figure reveal" style="transition-delay:150ms">
@@ -149,7 +152,7 @@
     <!-- Boxing Gallery -->
     <section id="training" class="gallery gallery--boxing" aria-label="Training gallery">
       <div class="gallery__header reveal">
-        <h2 class="gallery__title">THE GYM</h2>
+        <h2 class="gallery__title" data-i18n="training.title">THE GYM</h2>
         <span class="gallery__chinese" aria-hidden="true">拳</span>
       </div>
       <div class="gallery__grid">
@@ -209,7 +212,7 @@
     <!-- Style Gallery -->
     <section id="style" class="gallery gallery--style" aria-label="Style gallery">
       <div class="gallery__header gallery__header--right reveal">
-        <h2 class="gallery__title">STYLE</h2>
+        <h2 class="gallery__title" data-i18n="style.title">STYLE</h2>
         <span class="gallery__chinese" aria-hidden="true">穿</span>
       </div>
       <div class="gallery__grid">
@@ -233,7 +236,7 @@
         </figure>
 
         <blockquote class="gallery__quote reveal">
-          <p>"the clothes are armor. the ring is where I test it."</p>
+          <p data-i18n="style.quote">"the ring earns it. the wardrobe wears it."</p>
         </blockquote>
 
         <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="11" aria-label="Open image">
@@ -299,7 +302,7 @@
 
     <a href="mailto:hello@junxi.studio" class="footer__email reveal" style="transition-delay:200ms">hello@junxi.studio</a>
 
-    <p class="footer__copyright reveal" style="transition-delay:300ms">© 2026 JUNXI</p>
+    <p class="footer__copyright reveal" style="transition-delay:300ms" data-i18n="footer.copyright">© 2026 JUNXI</p>
   </footer>
 
   <!-- Lightbox -->
@@ -315,6 +318,7 @@
     <div class="lightbox__counter" aria-live="polite"></div>
   </div>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
