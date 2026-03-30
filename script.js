@@ -1,16 +1,68 @@
 (function () {
   'use strict';
 
+  // ── Hero entrance sequence ───────────────────────────────────
+  var heroName = document.querySelector('.hero__name');
+  if (heroName) {
+    var text = heroName.textContent.trim();
+    heroName.innerHTML = '';
+    for (var i = 0; i < text.length; i++) {
+      var span = document.createElement('span');
+      span.className = 'hero__char';
+      span.textContent = text[i] === ' ' ? '\u00A0' : text[i];
+      span.style.animationDelay = (0.4 + i * 0.1) + 's';
+      heroName.appendChild(span);
+    }
+  }
+
   // ── Nav scroll ───────────────────────────────────────────────
-  const nav = document.getElementById('site-nav');
-  window.addEventListener('scroll', function () {
-    nav.classList.toggle('nav--scrolled', window.scrollY > 50);
-  }, { passive: true });
+  var nav = document.getElementById('site-nav');
+  var lastScrollY = 0;
+  var ticking = false;
+
+  function onScroll() {
+    lastScrollY = window.scrollY;
+    if (!ticking) {
+      requestAnimationFrame(function () {
+        nav.classList.toggle('nav--scrolled', lastScrollY > 50);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // ── Active nav link tracking ─────────────────────────────────
+  var navLinks = document.querySelectorAll('.nav__link');
+  var sections = [];
+  navLinks.forEach(function (link) {
+    var href = link.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      var section = document.getElementById(href.slice(1));
+      if (section) sections.push({ el: section, link: link });
+    }
+  });
+
+  if (sections.length) {
+    var sectionObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var match = sections.find(function (s) { return s.el === entry.target; });
+        if (match) {
+          if (entry.isIntersecting) {
+            navLinks.forEach(function (l) { l.classList.remove('is-active'); });
+            match.link.classList.add('is-active');
+          }
+        }
+      });
+    }, { threshold: 0.2, rootMargin: '-20% 0px -60% 0px' });
+
+    sections.forEach(function (s) { sectionObserver.observe(s.el); });
+  }
 
   // ── Mobile menu ──────────────────────────────────────────────
-  const hamburger = document.querySelector('.nav__hamburger');
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileLinks = mobileMenu.querySelectorAll('.mobile-menu__link');
+  var hamburger = document.querySelector('.nav__hamburger');
+  var mobileMenu = document.getElementById('mobile-menu');
+  var mobileLinks = mobileMenu.querySelectorAll('.mobile-menu__link');
 
   function openMenu() {
     mobileMenu.removeAttribute('aria-hidden');
@@ -149,7 +201,7 @@
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px' });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
   document.querySelectorAll('.reveal').forEach(function (el) {
     revealObserver.observe(el);

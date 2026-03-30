@@ -101,6 +101,8 @@
       </picture>
       <div class="hero__content">
         <h1 class="hero__name">JUNXI</h1>
+        <span class="hero__accent-line" aria-hidden="true"></span>
+        <p class="hero__subtitle" data-i18n="hero.subtitle">FIGHTER &middot; STYLIST</p>
       </div>
       <div class="hero__scroll" aria-hidden="true">
         <span class="hero__scroll-text" data-i18n="hero.scroll">SCROLL</span>
@@ -300,7 +302,7 @@
       </a>
     </div>
 
-    <a href="mailto:hello@junxi.studio" class="footer__email reveal" style="transition-delay:200ms">hello@junxi.studio</a>
+    <a href="mailto:3027465423@qq.com" class="footer__email reveal" style="transition-delay:200ms" data-i18n="footer.email">Contact Me</a>
 
     <p class="footer__copyright reveal" style="transition-delay:300ms" data-i18n="footer.copyright">© 2026 JUNXI</p>
   </footer>
@@ -317,6 +319,14 @@
     </figure>
     <div class="lightbox__counter" aria-live="polite"></div>
   </div>
+
+  <!-- Film grain texture overlay -->
+  <svg class="grain" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <filter id="grain-filter">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#grain-filter)"/>
+  </svg>
 
   <script src="i18n.js"></script>
   <script src="script.js"></script>
