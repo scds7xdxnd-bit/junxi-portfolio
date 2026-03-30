@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Junxi — Boxer &amp; Creative</title>
+  <meta name="description" content="Portfolio of Junxi — boxing, muay thai training, and avant-garde personal style. Photography and visual storytelling.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://junxi.vercel.app/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Junxi — Boxer &amp; Creative">
+  <meta property="og:description" content="Boxing, muay thai, and avant-garde style. A visual portfolio.">
+  <meta property="og:image" content="https://junxi.vercel.app/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://junxi.vercel.app/">
+  <meta property="og:site_name" content="Junxi">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Junxi — Boxer &amp; Creative">
+  <meta name="twitter:description" content="Boxing, muay thai, and avant-garde style. A visual portfolio.">
+  <meta name="twitter:image" content="https://junxi.vercel.app/images/og-image.jpg">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Junxi",
+    "url": "https://junxi.vercel.app",
+    "image": "https://junxi.vercel.app/images/og-image.jpg",
+    "description": "Boxer, muay thai practitioner, and fashion creative.",
+    "knowsAbout": ["Boxing", "Muay Thai", "Fashion", "Personal Style"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@400;500;600&family=JetBrains+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Manrope:wght@400;500;600&family=JetBrains+Mono&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Navigation -->
+  <header>
+    <nav id="site-nav" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="#hero" class="nav__logo">JUNXI</a>
+        <div class="nav__links" role="list">
+          <a href="#about" class="nav__link" role="listitem">ABOUT</a>
+          <a href="#training" class="nav__link" role="listitem">TRAINING</a>
+          <a href="#style" class="nav__link" role="listitem">STYLE</a>
+          <a href="#contact" class="nav__link" role="listitem">CONTACT</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+          <span class="nav__hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Navigation menu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+      <a href="#about" class="mobile-menu__link reveal">ABOUT</a>
+      <a href="#training" class="mobile-menu__link reveal" style="transition-delay:100ms">TRAINING</a>
+      <a href="#style" class="mobile-menu__link reveal" style="transition-delay:200ms">STYLE</a>
+      <a href="#contact" class="mobile-menu__link reveal" style="transition-delay:300ms">CONTACT</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section id="hero" class="hero" aria-label="Introduction">
+      <picture class="hero__bg">
+        <source type="image/webp" srcset="images/night/night-profile-silhouette.webp">
+        <img
+          src="images/night/night-profile-silhouette.jpg"
+          alt=""
+          aria-hidden="true"
+          loading="eager"
+          decoding="async"
+          class="hero__bg-img"
+          width="800"
+          height="1067"
+        >
+      </picture>
+      <div class="hero__content">
+        <h1 class="hero__name">JUNXI</h1>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span class="hero__scroll-text">SCROLL</span>
+        <svg class="hero__chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about" aria-label="About">
+      <div class="about__text">
+        <p class="about__label reveal">ABOUT</p>
+        <h2 class="about__heading reveal" style="transition-delay:100ms"><em>I train. I dress how I want. I'm building something.</em></h2>
+        <p class="about__body reveal" style="transition-delay:200ms">Five days a week in the gym. Guard up before the bell, not during. The discipline isn't punishment — it's the only thing that feels like honesty.</p>
+        <p class="about__body reveal" style="transition-delay:300ms">The clothes came later, or maybe they were always there. Black everything. Layered. Intentional. Not fashion as a statement, just fashion as an extension of how I move through the world.</p>
+        <p class="about__body reveal" style="transition-delay:400ms">Guangzhou. Twenty-something. Figuring it out through what I wear and how I fight.</p>
+      </div>
+      <div class="about__images">
+        <figure class="about__figure reveal" style="transition-delay:150ms">
+          <picture>
+            <source type="image/webp" srcset="images/fashion/fashion-candlelight.webp">
+            <img
+              src="images/fashion/fashion-candlelight.jpg"
+              alt="Junxi in candlelight, sharp jawline and earrings highlighted, dark background"
+              loading="lazy"
+              decoding="async"
+              class="about__img about__img--primary"
+              width="800"
+              height="1067"
+            >
+          </picture>
+        </figure>
+        <figure class="about__figure reveal" style="transition-delay:300ms">
+          <picture>
+            <source type="image/webp" srcset="images/fashion/fashion-airport.webp">
+            <img
+              src="images/fashion/fashion-airport.jpg"
+              alt="Airport departure hall, headphones on, compression tee, travel bag"
+              loading="lazy"
+              decoding="async"
+              class="about__img about__img--secondary"
+              width="1067"
+              height="800"
+            >
+          </picture>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Boxing Gallery -->
+    <section id="training" class="gallery gallery--boxing" aria-label="Training gallery">
+      <div class="gallery__header reveal">
+        <h2 class="gallery__title">THE GYM</h2>
+        <span class="gallery__chinese" aria-hidden="true">拳</span>
+      </div>
+      <div class="gallery__grid">
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="0" aria-label="Open image: boxing gym mirror guard">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-gym-mirror-guard.webp">
+            <img src="images/boxing/boxing-gym-mirror-guard.jpg" alt="Junxi in guard stance reflected in a boxing gym mirror, Chinese calligraphy banners visible on walls" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="1" aria-label="Open image: boxing hand wrap trainer">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-hand-wrap-trainer.webp">
+            <img src="images/boxing/boxing-hand-wrap-trainer.jpg" alt="Trainer wrapping Junxi's hands before a session, gym equipment in background" loading="lazy" decoding="async" class="gallery__img" width="1067" height="800">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="2" aria-label="Open image: boxing hand wrap close">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-hand-wrap-close.webp">
+            <img src="images/boxing/boxing-hand-wrap-close.jpg" alt="Close-up of hands being wrapped with red hand wraps, focused and deliberate" loading="lazy" decoding="async" class="gallery__img" width="800" height="800">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="3" aria-label="Open image: boxing trainer pads">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-trainer-pads.webp">
+            <img src="images/boxing/boxing-trainer-pads.jpg" alt="Junxi throwing combinations on trainer's pads, mid-action" loading="lazy" decoding="async" class="gallery__img" width="1067" height="800">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="4" aria-label="Open image: boxing post session">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-post-session.webp">
+            <img src="images/boxing/boxing-post-session.jpg" alt="Post-training peace sign in front of gym mirror, relaxed smile" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="5" aria-label="Open image: boxing guard stance">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-guard-stance.webp">
+            <img src="images/boxing/boxing-guard-stance.jpg" alt="Tight guard stance front-on, Venum gear visible, intense focus" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="6" aria-label="Open image: boxing gloves detail">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-gloves-detail.webp">
+            <img src="images/boxing/boxing-gloves-detail.jpg" alt="Tony Jaa Majestic 12oz boxing gloves close-up, red leather with gold branding" loading="lazy" decoding="async" class="gallery__img" width="800" height="800">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="7" aria-label="Open image: boxing gym wide">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/boxing/boxing-gym-wide.webp">
+            <img src="images/boxing/boxing-gym-wide.jpg" alt="Wide shot of Chinese boxing gym interior, heavy bags and ring visible, red and gold accents" loading="lazy" decoding="async" class="gallery__img" width="1440" height="960">
+          </picture>
+          <figcaption class="gallery__caption">广州, 2025</figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- Style Gallery -->
+    <section id="style" class="gallery gallery--style" aria-label="Style gallery">
+      <div class="gallery__header gallery__header--right reveal">
+        <h2 class="gallery__title">STYLE</h2>
+        <span class="gallery__chinese" aria-hidden="true">穿</span>
+      </div>
+      <div class="gallery__grid">
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="8" aria-label="Open image: fashion hotel room">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/fashion/fashion-hotel-room.webp">
+            <img src="images/fashion/fashion-hotel-room.jpg" alt="Full-length mirror shot in hotel room, all-black outfit, silver accessories" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="9" aria-label="Open image: fashion salon back">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/fashion/fashion-salon-back.webp">
+            <img src="images/fashion/fashion-salon-back.jpg" alt="Back view at salon showing wolf cut / layered mullet, fresh cut" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="10" aria-label="Open image: night harbor skyline">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/night/night-harbor-skyline.webp">
+            <img src="images/night/night-harbor-skyline.jpg" alt="Night harbor panorama with city skyline reflections on water" loading="lazy" decoding="async" class="gallery__img" width="1440" height="960">
+          </picture>
+        </figure>
+
+        <blockquote class="gallery__quote reveal">
+          <p>"the clothes are armor. the ring is where I test it."</p>
+        </blockquote>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="11" aria-label="Open image: fashion beanie turtleneck">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/fashion/fashion-beanie-turtleneck.webp">
+            <img src="images/fashion/fashion-beanie-turtleneck.jpg" alt="Dark beanie and turtleneck against muted background, silver chain visible" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="12" aria-label="Open image: night camo beanie">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/night/night-camo-beanie.webp">
+            <img src="images/night/night-camo-beanie.jpg" alt="Waterfront at night, camo military jacket and beanie, city lights behind" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="13" aria-label="Open image: detail nails white">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/detail/detail-nails-white.webp">
+            <img src="images/detail/detail-nails-white.jpg" alt="Close-up of white sculptural gel nails, textured matte finish" loading="lazy" decoding="async" class="gallery__img" width="800" height="800">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="14" aria-label="Open image: detail boots racer">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/detail/detail-boots-racer.webp">
+            <img src="images/detail/detail-boots-racer.jpg" alt="Racer × New Rock boots, avant-garde silhouette, dark leather" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+        <figure class="gallery__item reveal" role="button" tabindex="0" data-lightbox-index="15" aria-label="Open image: lifestyle salon mirror">
+          <picture class="gallery__picture">
+            <source type="image/webp" srcset="images/lifestyle/lifestyle-salon-mirror.webp">
+            <img src="images/lifestyle/lifestyle-salon-mirror.jpg" alt="Salon mirror selfie, mid-haircut, relaxed expression" loading="lazy" decoding="async" class="gallery__img" width="800" height="1067">
+          </picture>
+        </figure>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="footer" aria-label="Contact and social links">
+    <figure class="footer__figure reveal">
+      <picture>
+        <source type="image/webp" srcset="images/lifestyle/lifestyle-ceramics-market.webp">
+        <img
+          src="images/lifestyle/lifestyle-ceramics-market.jpg"
+          alt="Browsing ceramics at a market, hands reaching for a piece, natural light"
+          loading="lazy"
+          decoding="async"
+          class="footer__img"
+          width="1067"
+          height="800"
+        >
+      </picture>
+    </figure>
+
+    <div class="footer__social reveal" style="transition-delay:100ms">
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle>
+        </svg>
+      </a>
+    </div>
+
+    <a href="mailto:hello@junxi.studio" class="footer__email reveal" style="transition-delay:200ms">hello@junxi.studio</a>
+
+    <p class="footer__copyright reveal" style="transition-delay:300ms">© 2026 JUNXI</p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer" aria-hidden="true">
+    <div class="lightbox__overlay"></div>
+    <button class="lightbox__close" aria-label="Close image viewer">&times;</button>
+    <button class="lightbox__prev" aria-label="Previous image">&#8249;</button>
+    <button class="lightbox__next" aria-label="Next image">&#8250;</button>
+    <figure class="lightbox__content">
+      <img class="lightbox__img" src="" alt="" width="1" height="1">
+      <figcaption class="lightbox__caption"></figcaption>
+    </figure>
+    <div class="lightbox__counter" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
