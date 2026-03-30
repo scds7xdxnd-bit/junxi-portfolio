@@ -1,0 +1,8 @@
+# Assets (images, certs — tracked separately)
+assets/
+
+# OPUS prompt files
+prompts/
+
+# OS
+.DS_Store
