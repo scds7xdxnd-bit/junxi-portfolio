@@ -104,16 +104,6 @@ button { background: none; border: none; cursor: pointer; font: inherit; color: 
 section, footer { scroll-margin-top: var(--nav-height); }
 @media (min-width: 1024px) { section, footer { scroll-margin-top: var(--nav-height-desktop); } }
 
-/* === Film Grain Texture Overlay === */
-.grain {
-  position: fixed;
-  inset: 0;
-  z-index: var(--z-grain);
-  pointer-events: none;
-  opacity: 0.035;
-  width: 100%;
-  height: 100%;
-}
 
 /* === Accessibility === */
 .skip-link {
@@ -201,6 +191,11 @@ section, footer { scroll-margin-top: var(--nav-height); }
               border-color var(--duration-fast) var(--ease-out);
 }
 .nav__lang:hover { color: var(--color-text-primary); border-color: rgba(232,228,224,0.25); }
+
+/* === Chinese Language Font Scaling (+20%) === */
+[lang="zh-CN"] .nav__link         { font-size: calc(var(--text-xs) * 1.2); }
+[lang="zh-CN"] .mobile-menu__link { font-size: calc(var(--text-2xl) * 1.2); }
+[lang="zh-CN"] .hero__subtitle    { font-size: calc(var(--text-xs) * 1.2); }
 
 /* === Hero === */
 .hero {

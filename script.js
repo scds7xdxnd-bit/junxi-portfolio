@@ -120,8 +120,7 @@
   });
 
   var images = galleryItems.map(function (item) {
-    var img = item.querySelector('img');
-    return { src: img.src, alt: img.alt };
+    return { src: item.querySelector('img').src };
   });
 
   var currentIndex = 0;
@@ -133,9 +132,10 @@
     lbImg.classList.add('is-fading');
     var next = currentIndex;
     setTimeout(function () {
+      var altText = galleryItems[next].querySelector('img').alt;
       lbImg.src = images[next].src;
-      lbImg.alt = images[next].alt;
-      lbCaption.textContent = images[next].alt;
+      lbImg.alt = altText;
+      lbCaption.textContent = altText;
       lbCounter.textContent = (next + 1) + ' / ' + total;
       lbImg.classList.remove('is-fading');
     }, 200);
@@ -144,9 +144,10 @@
   function openLightbox(index) {
     focusOrigin = document.activeElement;
     currentIndex = index;
+    var altText = galleryItems[index].querySelector('img').alt;
     lbImg.src = images[index].src;
-    lbImg.alt = images[index].alt;
-    lbCaption.textContent = images[index].alt;
+    lbImg.alt = altText;
+    lbCaption.textContent = altText;
     lbCounter.textContent = (index + 1) + ' / ' + images.length;
     lightbox.removeAttribute('aria-hidden');
     document.body.style.overflow = 'hidden';
