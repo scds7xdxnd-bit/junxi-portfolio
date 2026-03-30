@@ -13,11 +13,16 @@
 
   <nav id="site-nav" class="site-nav" aria-label="Main navigation">
     <div class="site-nav__container">
-      <a href="#about" class="site-nav__link">About</a>
-      <a href="#projects" class="site-nav__link">Projects</a>
-      <a href="#skills" class="site-nav__link">Skills</a>
-      <a href="#ai-tools" class="site-nav__link">AI Tools</a>
-      <a href="#certificates" class="site-nav__link">Certificates</a>
+      <a href="#about" class="site-nav__link" data-i18n="nav.about">About</a>
+      <a href="#projects" class="site-nav__link" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" class="site-nav__link" data-i18n="nav.skills">Skills</a>
+      <a href="#ai-tools" class="site-nav__link" data-i18n="nav.ai-tools">AI Tools</a>
+      <a href="#certificates" class="site-nav__link" data-i18n="nav.certificates">Certificates</a>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+        <span data-lang="en">EN</span>
+        <span aria-hidden="true">·</span>
+        <span data-lang="zh">中文</span>
+      </button>
     </div>
   </nav>
 
@@ -25,28 +30,27 @@
   <header id="hero" class="hero">
     <div class="hero__container">
       <div class="hero__content">
-        <span class="type-micro hero__micro" style="color: var(--magenta)">
+        <span class="type-micro hero__micro" style="color: var(--magenta)" data-i18n="hero.micro">
           BUILDER · MULTILINGUAL · SYSTEMS THINKER
         </span>
         <h1 class="type-display hero__name">Taeyang Han</h1>
         <p class="hero__subtitle">한태양 · Khairul Ammar Hakimi</p>
-        <p class="hero__oneliner">
+        <p class="hero__oneliner" data-i18n="hero.oneliner">
           I build systems for life management — finance, health, habits, all in one place.
         </p>
         <div class="hero__socials">
           <a href="https://github.com/scds7xdxnd-bit" class="pill pill--social pill--github" target="_blank" rel="noopener">
             GitHub
-          </a><!-- CONTENT: GitHub URL in href -->
+          </a>
           <a href="https://www.linkedin.com/in/khairul-ammar-hakimi" class="pill pill--social pill--linkedin" target="_blank" rel="noopener">
             LinkedIn
-          </a><!-- CONTENT: LinkedIn URL in href -->
+          </a>
           <a href="https://xhslink.com/m/6pTVib4GbZU" class="pill pill--social pill--xiaohongshu" target="_blank" rel="noopener">
             小红书
-          </a><!-- CONTENT: Xiaohongshu URL in href -->
+          </a>
         </div>
       </div>
       <div class="hero__photo">
-        <!-- CONTENT: hero photo — recommended 400x500px min, PNG/JPG -->
         <img src="assets/hero.jpg" alt="Photo of Taeyang Han" class="hero__photo-img">
       </div>
     </div>
@@ -69,9 +73,9 @@
       <div class="section__container">
         <div class="about__layout">
           <div class="about__text reveal">
-            <span class="type-micro" style="color: var(--cyan)">ABOUT</span>
-            <h2 class="type-headline about__headline">Builder, not a credential collector</h2>
-            <p class="type-body about__body">
+            <span class="type-micro" style="color: var(--cyan)" data-i18n="about.micro">ABOUT</span>
+            <h2 class="type-headline about__headline" data-i18n="about.headline">Builder, not a credential collector</h2>
+            <p class="type-body about__body" data-i18n="about.body">
               Malaysian student at Sogang University double-majoring in Chemical & Biomolecular Engineering and International Business. I learn by building — from a personal accounting system maintained since 2021 to a unified life management platform spanning 6 domains. Currently leading PALS as president and mentoring through Samsung Dream Scholars.
             </p>
           </div>
@@ -86,19 +90,19 @@
             <div class="about__stats">
               <div class="about__stat">
                 <span class="about__stat-number">5</span>
-                <span class="about__stat-label">Languages</span>
+                <span class="about__stat-label" data-i18n="about.stat.languages">Languages</span>
               </div>
               <div class="about__stat">
                 <span class="about__stat-number">30+</span>
-                <span class="about__stat-label">Certificates</span>
+                <span class="about__stat-label" data-i18n="about.stat.certificates">Certificates</span>
               </div>
               <div class="about__stat">
                 <span class="about__stat-number">7</span>
-                <span class="about__stat-label">Leadership Roles</span>
+                <span class="about__stat-label" data-i18n="about.stat.leadership">Leadership Roles</span>
               </div>
               <div class="about__stat">
                 <span class="about__stat-number">5yrs</span>
-                <span class="about__stat-label">Building</span>
+                <span class="about__stat-label" data-i18n="about.stat.building">Building</span>
               </div>
             </div>
           </div>
@@ -109,8 +113,8 @@
     <!-- ════════════════ PROJECTS ════════════════ -->
     <section id="projects" class="projects section">
       <div class="section__container">
-        <span class="type-micro" style="color: var(--magenta)">PROJECTS</span>
-        <h2 class="type-headline" style="margin: 12px 0 32px 0;">What I've built</h2>
+        <span class="type-micro" style="color: var(--magenta)" data-i18n="projects.micro">PROJECTS</span>
+        <h2 class="type-headline" style="margin: 12px 0 32px 0;" data-i18n="projects.headline">What I've built</h2>
 
         <!-- Hero project card — rendered by JS from PROJECTS array (is_hero: true) -->
         <div id="hero-project" class="project-hero"></div>
@@ -123,11 +127,11 @@
     <!-- ════════════════ SKILLS ════════════════ -->
     <section id="skills" class="skills section">
       <div class="section__container">
-        <span class="type-micro" style="color: var(--lime); color: var(--lime-dark-text);">SKILLS</span>
-        <h2 class="type-headline" style="margin: 12px 0 24px 0;">What I work with</h2>
+        <span class="type-micro" style="color: var(--lime-dark-text);" data-i18n="skills.micro">SKILLS</span>
+        <h2 class="type-headline" style="margin: 12px 0 24px 0;" data-i18n="skills.headline">What I work with</h2>
         <div class="skills__grid reveal">
           <div class="skills__group">
-            <span class="skills__group-label">Languages</span>
+            <span class="skills__group-label" data-i18n="skills.group.languages">Languages</span>
             <div class="skills__pills">
               <span class="pill pill--skill">Python</span>
               <span class="pill pill--skill">TypeScript</span>
@@ -137,7 +141,7 @@
             </div>
           </div>
           <div class="skills__group">
-            <span class="skills__group-label">Frameworks</span>
+            <span class="skills__group-label" data-i18n="skills.group.frameworks">Frameworks</span>
             <div class="skills__pills">
               <span class="pill pill--skill">Next.js</span>
               <span class="pill pill--skill">Flask</span>
@@ -145,7 +149,7 @@
             </div>
           </div>
           <div class="skills__group">
-            <span class="skills__group-label">Tools & Data</span>
+            <span class="skills__group-label" data-i18n="skills.group.tools">Tools & Data</span>
             <div class="skills__pills">
               <span class="pill pill--skill">PostgreSQL</span>
               <span class="pill pill--skill">Git</span>
@@ -154,7 +158,7 @@
             </div>
           </div>
           <div class="skills__group">
-            <span class="skills__group-label">Domains</span>
+            <span class="skills__group-label" data-i18n="skills.group.domains">Domains</span>
             <div class="skills__pills">
               <span class="pill pill--skill">Systems Design</span>
               <span class="pill pill--skill">Content Strategy</span>
@@ -169,59 +173,59 @@
     <!-- ════════════════ AI TOOLS ════════════════ -->
     <section id="ai-tools" class="ai-tools section">
       <div class="section__container">
-        <span class="type-micro" style="color: var(--magenta)">AI-AUGMENTED DEVELOPMENT</span>
-        <h2 class="type-headline" style="margin: 12px 0 24px 0;">How I build with AI</h2>
+        <span class="type-micro" style="color: var(--magenta)" data-i18n="ai.micro">AI-AUGMENTED DEVELOPMENT</span>
+        <h2 class="type-headline" style="margin: 12px 0 24px 0;" data-i18n="ai.headline">How I build with AI</h2>
         <div class="ai-tools__grid reveal">
 
           <div class="ai-tool-card ai-tool-card--claude">
             <div class="ai-tool-card__header">
               <div class="ai-tool-card__badge">CC</div>
-              <span class="ai-tool-card__name">Claude Code</span>
+              <span class="ai-tool-card__name" data-i18n="ai.cc.name">Claude Code</span>
             </div>
-            <p class="ai-tool-card__desc">Agentic terminal assistant with full-repo context. Used for architecture decisions, end-to-end feature builds, and complex refactors across multiple files.</p>
+            <p class="ai-tool-card__desc" data-i18n="ai.cc.desc">Agentic terminal assistant with full-repo context. Used for architecture decisions, end-to-end feature builds, and complex refactors across multiple files.</p>
             <div class="ai-tool-card__tags">
-              <span class="ai-tool-card__tag">Agentic coding</span>
-              <span class="ai-tool-card__tag">Architecture</span>
-              <span class="ai-tool-card__tag">Terminal</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cc.tag1">Agentic coding</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cc.tag2">Architecture</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cc.tag3">Terminal</span>
             </div>
           </div>
 
           <div class="ai-tool-card ai-tool-card--copilot">
             <div class="ai-tool-card__header">
               <div class="ai-tool-card__badge">GC</div>
-              <span class="ai-tool-card__name">GitHub Copilot</span>
+              <span class="ai-tool-card__name" data-i18n="ai.gc.name">GitHub Copilot</span>
             </div>
-            <p class="ai-tool-card__desc">Inline suggestions and multi-file edits in VS Code. Used daily for boilerplate elimination, rapid prototyping, and code review assistance.</p>
+            <p class="ai-tool-card__desc" data-i18n="ai.gc.desc">Inline suggestions and multi-file edits in VS Code. Used daily for boilerplate elimination, rapid prototyping, and code review assistance.</p>
             <div class="ai-tool-card__tags">
-              <span class="ai-tool-card__tag">Autocomplete</span>
-              <span class="ai-tool-card__tag">VS Code</span>
-              <span class="ai-tool-card__tag">Code review</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.gc.tag1">Autocomplete</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.gc.tag2">VS Code</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.gc.tag3">Code review</span>
             </div>
           </div>
 
           <div class="ai-tool-card ai-tool-card--codex">
             <div class="ai-tool-card__header">
               <div class="ai-tool-card__badge">CX</div>
-              <span class="ai-tool-card__name">OpenAI Codex</span>
+              <span class="ai-tool-card__name" data-i18n="ai.cx.name">OpenAI Codex</span>
             </div>
-            <p class="ai-tool-card__desc">Code generation via API for scripts, data pipelines, and automating repetitive dev tasks. Integrated into custom tooling across projects.</p>
+            <p class="ai-tool-card__desc" data-i18n="ai.cx.desc">Code generation via API for scripts, data pipelines, and automating repetitive dev tasks. Integrated into custom tooling across projects.</p>
             <div class="ai-tool-card__tags">
-              <span class="ai-tool-card__tag">Code generation</span>
-              <span class="ai-tool-card__tag">API</span>
-              <span class="ai-tool-card__tag">Automation</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cx.tag1">Code generation</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cx.tag2">API</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.cx.tag3">Automation</span>
             </div>
           </div>
 
           <div class="ai-tool-card ai-tool-card--agentic">
             <div class="ai-tool-card__header">
               <div class="ai-tool-card__badge">AW</div>
-              <span class="ai-tool-card__name">Agentic Workflows</span>
+              <span class="ai-tool-card__name" data-i18n="ai.aw.name">Agentic Workflows</span>
             </div>
-            <p class="ai-tool-card__desc">Multi-agent pipelines for autonomous task completion — chaining models for research, implementation, testing, and deployment without manual steps.</p>
+            <p class="ai-tool-card__desc" data-i18n="ai.aw.desc">Multi-agent pipelines for autonomous task completion — chaining models for research, implementation, testing, and deployment without manual steps.</p>
             <div class="ai-tool-card__tags">
-              <span class="ai-tool-card__tag">Multi-agent</span>
-              <span class="ai-tool-card__tag">Pipelines</span>
-              <span class="ai-tool-card__tag">Orchestration</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.aw.tag1">Multi-agent</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.aw.tag2">Pipelines</span>
+              <span class="ai-tool-card__tag" data-i18n="ai.aw.tag3">Orchestration</span>
             </div>
           </div>
 
@@ -232,8 +236,8 @@
     <!-- ════════════════ CERTIFICATES ════════════════ -->
     <section id="certificates" class="certificates section">
       <div class="section__container">
-        <span class="type-micro" style="color: var(--cyan)">CERTIFICATES & AWARDS</span>
-        <h2 class="type-headline" style="margin: 12px 0 24px 0;">Recognition</h2>
+        <span class="type-micro" style="color: var(--cyan)" data-i18n="certs.micro">CERTIFICATES & AWARDS</span>
+        <h2 class="type-headline" style="margin: 12px 0 24px 0;" data-i18n="certs.headline">Recognition</h2>
 
         <!-- Filter bar -->
         <div class="cert-filters reveal" role="tablist" aria-label="Certificate category filter">
@@ -257,8 +261,8 @@
     <div class="footer__container">
       <div class="footer__left reveal">
         <span class="footer__name">Taeyang Han</span>
-        <span class="footer__tagline">Built with intention</span>
-        <a href="mailto:ammarhakimikm03@gmail.com" class="footer__cta">Open to consulting, mentoring, or building together →</a>
+        <span class="footer__tagline" data-i18n="footer.tagline">Built with intention</span>
+        <a href="mailto:ammarhakimikm03@gmail.com" class="footer__cta" data-i18n="footer.cta">Open to consulting, mentoring, or building together →</a>
       </div>
       <div class="footer__right reveal">
         <a href="https://github.com/scds7xdxnd-bit" class="footer__icon" target="_blank" rel="noopener" aria-label="GitHub">
